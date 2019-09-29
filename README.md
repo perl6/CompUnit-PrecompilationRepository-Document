@@ -1,7 +1,7 @@
 # CompUnit::PrecompilationRepository::Document
 
-[![Build Status](https://travis-ci.com/perl6/Pod-To-Cached.svg?branch=master)](https://travis-ci.com/perl6/Pod-To-Cached)
-[![Appveyor Build Status](https://ci.appveyor.com/api/projects/status/github/perl6/Pod-To-Cached?svg=true)](https://ci.appveyor.com/api/projects/status/github/perl6/Pod-To-Cached?svg=true)
+[![Build Status](https://travis-ci.com/perl6/CompUnit-PrecompilationRepository-Document.svg?branch=master)](https://travis-ci.com/perl6/CompUnit-PrecompilationRepository-Document)
+[![Appveyor Build Status](https://ci.appveyor.com/api/projects/status/github/perl6/CompUnit-PrecompilationRepository-Document?svg=true)](https://ci.appveyor.com/api/projects/status/github/perl6/CompUnit-PrecompilationRepository-Document?svg=true)
 
 This module has been spun off from Pod::To::Cached, and will deal with the cache of a single file.
 
