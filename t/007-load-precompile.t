@@ -3,7 +3,6 @@ use v6.c;
 use Test;
 use CompUnit::PrecompilationRepository::Document;
 use File::Directory::Tree;
-use nqp;
 
 constant cache-name = "cache";
 init( cache-name );

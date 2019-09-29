@@ -19,11 +19,11 @@ class CompUnit::PrecompilationRepository::Document is CompUnit::PrecompilationRe
                         );
     }
 
+    #! Initializes object with a document path, will fail if it does not exist
     method new( $doc-path ) {
         init() unless $precomp-store;
         my $this-path = IO::Path.new( $doc-path );
-        fail("Path $this-path not found") if ! $this-path.e;
-        my $doc-name = $this-path.basename;
+        fail("Path $this-path not found") if ! $this-path.e;        my $doc-name = $this-path.basename;
         self.bless(
                 doc-path => $this-path,
                 doc-name => $doc-name,
@@ -38,10 +38,12 @@ class CompUnit::PrecompilationRepository::Document is CompUnit::PrecompilationRe
         $!precompiled-pod = nqp::atkey($!handle.unit,'$=pod')[0];
     }
 
+    # Returns the cache key, mainly for testing purposes
     method key() {
         $!key
     }
 
+    # Returns the precompiled pod
     method precompiled-pod() { $!precompiled-pod }
 
     #! Provides a key for the document with that particular name
