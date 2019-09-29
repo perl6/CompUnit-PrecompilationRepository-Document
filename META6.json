@@ -1,9 +1,10 @@
 {
-  "name": "Pod::To::Cached",
-  "description": "Precompile a collection of pod files into a cache.",
-  "version": "0.4.0",
+  "name": "CompUnit::PrecompilationRepository::Document",
+  "description": "Precompiled (mainly) document file.",
+  "version": "0.1.0",
   "perl": "6.*",
   "authors": "Richard Hainsworth",
+  "auth": "github:perl6",
   "depends": [
     "JSON::Fast:ver<0.9.18+>"
   ],
@@ -12,13 +13,12 @@
     "Test::Output"
   ],
   "provides": {
-    "CompUnit::PrecompilationRepository::Document": "lib/CompUnit/PrecompilationRepository/Document.pm6",
-    "Pod::To::Cached": "lib/Pod/To/Cached.pm6"
+    "CompUnit::PrecompilationRepository::Document": "lib/CompUnit/PrecompilationRepository/Document.pm6"
   },
   "support": {
-    "source": "https://github.com/perl6/Pod-To-Cached/issues"
+    "source": "https://github.com/perl6/CompUnit-PrecompilationRepository-Document/issues"
   },
   "license": "Artistic-2.0",
-  "source-url": "https://github.com/perl6/Pod-To-Cached.git",
+  "source-url": "https://github.com/perl6/CompUnit-PrecompilationRepository-Document.git",
   "source-type": "git"
 }
